@@ -8,6 +8,8 @@ router.get('/random', ApiController.random)
 router.get('/name/:name', ApiController.name)
 
 router.post('/Phrases', ApiController.createPhrase)
+router.get('/Phrases', ApiController.phrasesList)
+router.get('/Phrase/:id', ApiController.getPhrase)
 
 
 

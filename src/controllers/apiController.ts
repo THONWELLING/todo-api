@@ -26,3 +26,20 @@ export const createPhrase = async (req: Request, res: Response) => {
   let newPhrase = await Phrase.create({ author, txt, location })
   res.json({ id: newPhrase.id, author, txt, location })
 }
+
+export const phrasesList = async (req: Request, res: Response) => {
+  let list = await Phrase.findAll()
+
+  res.json({ list })
+}
+
+export const getPhrase = async (req: Request, res: Response) => {
+  let { id } = req.params
+
+  let phrase = await Phrase.findByPk(id)
+  if(phrase) {
+    res.json({ phrase })
+  } else {
+    res.json({ error: 'Phrase Not Found' })
+  }
+}
