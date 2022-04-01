@@ -10,6 +10,7 @@ router.get('/name/:name', ApiController.name)
 router.post('/Phrases', ApiController.createPhrase)
 router.get('/Phrases', ApiController.phrasesList)
 router.get('/Phrase/:id', ApiController.getPhrase)
+router.put('/Phrase/:id', ApiController.updatePhrase)
 
 
 
