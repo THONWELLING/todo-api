@@ -62,3 +62,11 @@ export const updatePhrase = async (req: Request, res: Response) => {
     res.json({ error: 'Phrase Does Not Exist' })
   }
 }
+
+export const deletePhrase = async (req: Request, res: Response) => {
+  let { id } = req.params
+  
+  await Phrase.destroy({ where: { id }})
+
+  res.json({})
+}
