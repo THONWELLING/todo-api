@@ -1,5 +1,5 @@
 {
-  "name": "mode-api",
+  "name": "todo-api",
   "version": "1.0.0",
   "description": "criando uma api usando express sequelize e postgresql",
   "main": "index.js",
@@ -7,16 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-dev": "nodemon -e ts,json src/server.ts"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/THONWELLING/node-mode-api.git"
-  },
   "author": "Thonwelling",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/THONWELLING/node-mode-api/issues"
-  },
-  "homepage": "https://github.com/THONWELLING/node-mode-api#readme",
   "dependencies": {
     "@types/cors": "^2.8.12",
     "cors": "^2.8.5",

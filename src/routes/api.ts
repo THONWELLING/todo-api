@@ -1,18 +1,14 @@
 import { Router } from "express"
-import * as ApiController from "../controllers/apiController"
+import * as TodoController from "../controllers/todoController"
+
+
 
 const router = Router()
 
-router.get('/ping', ApiController.ping)
-router.get('/random', ApiController.random)
-router.get('/name/:name', ApiController.name)
-
-router.post('/Phrases', ApiController.createPhrase)
-router.get('/Phrases', ApiController.phrasesList)
-router.get('/Phrase/random', ApiController.randomPhrase)
-router.get('/Phrase/:id', ApiController.getPhrase)
-router.put('/Phrase/:id', ApiController.updatePhrase)
-router.delete('/Phrase/:id', ApiController.deletePhrase)
+router.get('/todo', TodoController.all)
+router.post('/todo', TodoController.add)
+router.put('/todo/:id', TodoController.update)
+router.delete('/todo/:id', TodoController.remove)
 
 
 

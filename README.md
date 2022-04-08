@@ -1,4 +1,4 @@
-# node-mode-api
+# todo-api
 
 # BackEnd
 
@@ -7,8 +7,6 @@
 - Visual Studio Code
   Extensões:
 - Insomnia ou Postman
-
----
 
 ## Dependencias nescessárias
 
@@ -58,7 +56,7 @@ O PostgreSQL é um poderoso sistema de banco de dados relacional de objeto de c�
 ## Acesse o Repositório
 
 ```bash
- 👁️‍🗨️  https://github.com/THONWELLING/node-mode-api
+ 👁️‍🗨️  https://github.com/THONWELLING/todo-api
 ```
 
 ## :atom: [Meu Likedln](https://www.linkedin.com/in/wellington-sousa-9464a6179/)
